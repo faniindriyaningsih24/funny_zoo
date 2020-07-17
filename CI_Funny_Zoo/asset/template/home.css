@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body
+{
+  background-color: #f9f9f9;
+}
+.content{
+  width: 1349px;
+  margin: 0px auto;
+}
+ 
+/* ----------------------------HEADER------------------------*/
+header{
+  height: 500px;
+  background-image: url('../images/latar1.jpg');
+  background-repeat: no-repeat;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  margin: 0px auto;
+}
+
+ 
+header h1.judul,
+header h3.deskripsi{
+text-align: center; 
+}
+/* -------------------------------MENU DROP DOWN-------------------------------- */
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#cssmenu {
+  margin: auto;
+  width: 1100px;
+  height: 60px;
+  background-color: #79bd9a;
+  background-color:rgba(0,0,0, .2);
+  border: 1px; 
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu a {
+  color: black;
+  display: inline-block;
+  font-family: Helvetica, Arial black, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+  font-style: bold;
+  color:whitesmoke;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: right;
+  margin-right: 35px;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #79bd9a;
+  margin-left: -10px;
+}
+
+#cssmenu > ul > li.active > a {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  box-shadow: inset 0 0 10px #0b486b;
+  -moz-box-shadow: inset 0 0 10px #0b486b;
+  -webkit-box-shadow: inset 0 0 10px #0b486b;
+  background: #0b486b;
+  background: -moz-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b486b), color-stop(110%, whitesmoke));
+  background: -webkit-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -o-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -ms-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: linear-gradient(to bottom, #0b486b 0%, whitesmoke 110%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#0b486b', EndColorStr='whitesmoke', GradientType=0);
+
+}
+#cssmenu > ul > li:hover > a {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  box-shadow: inset 0 0 10px #0b486b;
+  -moz-box-shadow: inset 0 0 10px #0b486b;
+  -webkit-box-shadow: inset 0 0 10px #0b486b;
+  background: #0b486b;
+  background: -moz-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b486b), color-stop(110%, whitesmoke));
+  background: -webkit-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -o-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -ms-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: linear-gradient(to bottom, #0b486b 0%, whitesmoke 110%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#0b486b', EndColorStr='whitesmoke', GradientType=0);
+
+}
+#cssmenu .has-sub {
+  z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+  background: #79bd9a;
+  border-bottom: 1px dotted #6fc7ec;
+  filter: none;
+  font-size: 15px;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #a8dba8;
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #a8dba8;
+  border-bottom: 1px dotted #6db2d0;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #3b8686;
+}
+
+/* ----------------------------BANNER------------------------*/
+#banner
+{
+  width:1100px; 
+  height:400px; 
+  border-radius: 5px 5px 0px 0px ;
+  background-color:purple;
+  margin:auto;
+}
+
+/* ----------------------------GALLERY------------------------*/
+#fotoslide
+{
+  width:1100px; 
+  height:200px; 
+  background-color:#a8dba8;
+  border-radius: 8px;
+  margin:auto;
+  margin-bottom: 30px;
+  margin-top:30px; 
+}
+
+#gambar
+{
+  width: 190px;
+  height: 179px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.16);
+  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-left: 15px;
+  float: left;
+  margin-left: 25px;
+}
+#deskripsi
+{
+  text-align: center;
+  padding: 10px 10px;
+  padding-top: 5px;
+  font-family: raleway;
+}
+
+/* ----------------------------KONTEN------------------------*/
+#isi{
+  width:1100px; 
+  height:1000px; 
+  background-color:#cff09e;
+  margin:auto;
+  margin-bottom: 50px;
+  border-radius: 0px 0px 8px 8px;
+}
+#isi1{
+  width:250px; 
+  height:990px; 
+  background-color:#cff09e;
+  margin:auto;
+  float: left;
+  margin-bottom: 50px;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 7px 7px 20px;
+}
+#isi2{
+  width:800px; 
+  height:990px; 
+  background-color:#cff09e;
+  margin:auto;
+  float: right;
+  margin-bottom: 50px;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: -7px 7px 20px;
+}
+#isi2 .judul h1{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 36;
+  color:lightgreen;
+}
+#isi2 .gambar img{
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 500px;
+  height: 300px;
+}
+#isi2 .hasil p{
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Tahoma;
+}
+#isi2 .hasil h4{
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  text-align: right;
+  font-size: 15px;
+  font-family: Tahoma;
+}
+
+/* ----------------------------FOOTER------------------------*/
+#footer
+{
+  width:1349px; 
+  height:400px;  
+  margin: 0 auto;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  text-align: center;
+}
+#footer1
+{
+  text-align: left;
+  float:left;
+  width:600px; 
+  height:300px;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+}
+#footer1 .link1 img 
+{
+  text-align: left;
+  float:left;
+  width:54px; 
+  height:45px;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  padding-left: 20px;
+}
+#footer1 .link2
+{
+  background-color: darkgray;
+  float: left;
+  padding-top:0px ;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+#footer1 .link2 a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+#footer2
+{
+  float: right;
+  width:600px; 
+  height:300px;  
+  margin: 0 auto;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  
+}
+#footer2 .alamat p
+{
+  text-align: right;
+  margin-right: 30px;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: tahoma;
+  color: whitesmoke;
+}
+#footer3
+{
+  float: left;
+  width:1349px; 
+  height:100px;  
+  margin: 0 auto;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  text-align: center;
+}
+/* ----------------------------GARIS FOOTER------------------------*/
+hr.onepixel {
+    margin-top: 150px;
+    border-top: 1px solid #afbcc6;
+    border-bottom: 1px solid #eff2f6;
+    height: 0px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------CALENDAR------------------------*/
+
+#sidebar{
+ background-color:#f3f1e7;
+ margin-left:10px;
+ margin-right:10px;
+ margin-top:20px;
+ border-radius:5px;
+ border-color:#C4E0AF;
+ border-style:solid;
+ border-width:thin; 
+}
+
+  #sidebar .body {
+  margin: 20px 15px 20px 15px;
+ }
+ 
+ #sidebar .judul {
+  margin:-13px auto 0;
+  width:98px;
+  height:35px;
+  background-color:#96b74b;
+  background-repeat:repeat-x;
+  border-radius:5px;
+ }
+
+  #sidebar .judul h4{
+  color:#ffffff;
+  text-shadow:0px 0px 5px #666666;
+  padding-left:10px;
+  padding-top:5px;
+ }
+ 
+ #sidebar li{
+  list-style-type:none;
+  display:block;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-left:-40px;
+  border-bottom:1px solid;
+  border-color:#C4E0AF;
+  
+ }
+
+  #sidebar li a{
+  color:#2e776a;
+  text-decoration:none;
+  padding-left:5px;
+ }
+
+  #sidebar li:hover{
+  color:#ffffff;
+  background-color:#b2df8e;
+  padding-left:-80px;
+ }
+
+

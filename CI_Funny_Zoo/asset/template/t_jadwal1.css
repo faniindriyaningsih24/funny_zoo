@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body
+{
+  background-color: white;
+}
+.content{
+  width: 1349px;
+  margin: 0px auto;
+}
+ 
+/* ----------------------------HEADER------------------------*/
+header{
+ height: 574px;
+ background-color: lightgray;
+}
+/* ----------------------------GAMBAR HEADER------------------------*/
+#img_header{
+  width:1349px; 
+  height:574px; 
+  background-image: url('../images/header/h1.jpg');
+  margin:auto;
+  float: bottom;
+}
+/* -------------------------------MENU DROP DOWN-------------------------------- */
+#cssmenu ul,
+#cssmenu li,
+#cssmenu span,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#cssmenu {
+  margin: auto;
+  width: 1349px;
+  height: 40px;
+  border: 1px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu img{
+  padding-top: 0px;
+}
+#cssmenu a {
+  color: black;
+  display: inline-block;
+  font-family:Comic Sans MS;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 0 20px;
+  text-decoration: none;
+  font-style: bold;
+  color:whitesmoke;
+}
+#cssmenu ul {
+  list-style: none;
+}
+#cssmenu > ul {
+  float: right;
+  margin-right: 70px;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #79bd9a;
+  margin-left: -10px;
+}
+
+#cssmenu > ul > li.active > a {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  box-shadow: inset 0 0 10px #0b486b;
+  -moz-box-shadow: inset 0 0 10px #0b486b;
+  -webkit-box-shadow: inset 0 0 10px #0b486b;
+  background: #0b486b;
+  background: -moz-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b486b), color-stop(110%, whitesmoke));
+  background: -webkit-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -o-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -ms-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: linear-gradient(to bottom, #0b486b 0%, whitesmoke 110%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#0b486b', EndColorStr='whitesmoke', GradientType=0);
+
+}
+#cssmenu > ul > li:hover > a {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  box-shadow: inset 0 0 10px #0b486b;
+  -moz-box-shadow: inset 0 0 10px #0b486b;
+  -webkit-box-shadow: inset 0 0 10px #0b486b;
+  background: #0b486b;
+  background: -moz-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b486b), color-stop(110%, whitesmoke));
+  background: -webkit-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -o-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: -ms-linear-gradient(top, #0b486b 0%, whitesmoke 110%);
+  background: linear-gradient(to bottom, #0b486b 0%, whitesmoke 110%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#0b486b', EndColorStr='whitesmoke', GradientType=0);
+
+}
+#cssmenu .has-sub {
+  z-index: 1;
+}
+#cssmenu .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+#cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+#cssmenu .has-sub ul li a {
+  background: #79bd9a;
+  border-bottom: 1px dotted #6fc7ec;
+  filter: none;
+  font-size: 15px;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+}
+#cssmenu .has-sub ul li:hover a {
+  background: #a8dba8;
+}
+#cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+#cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+#cssmenu .has-sub .has-sub ul li a {
+  background: #a8dba8;
+  border-bottom: 1px dotted #6db2d0;
+}
+#cssmenu .has-sub .has-sub ul li a:hover {
+  background: #3b8686;
+}
+
+/* ----------------------------BANNER------------------------*/
+#banner
+{
+  width:1100px; 
+  height:400px; 
+  border-radius: 5px 5px 0px 0px ;
+  background-color:purple;
+  margin:auto;
+}
+/* ----------------------------INFORMASI------------------------*/
+#info
+{
+  width:1349px; 
+  height:200px; 
+  background-color:white;
+  margin:auto;
+  margin-bottom: 30px;
+}
+#info1
+{
+  width:1230px; 
+  height:200px; 
+  background-color:white;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  margin-left: 100px; 
+
+}
+#subinfo
+{
+  width:410px; 
+  height:200px; 
+  background-color:white;
+  margin:auto;
+  margin-bottom: 30px;
+  float: left;
+}
+#subinfo .sub1 img 
+{
+  text-align: left;
+  float:left;
+  width:130px; 
+  height:130px;
+  background: white;
+  border-top: 2px solid white;
+  margin-left: 5px;
+}
+#subinfo .sub2
+{
+  background-color: white;
+  float: left;
+  padding-top:50px ;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 5px;
+  margin: auto;
+  text-align: left;
+  font-size: 21px;
+  font-family: Cooper Black;
+}
+#subinfo .sub2 a
+{
+  text-decoration: none;
+  color: steelblue;
+}
+/* ----------------------------KONTEN1------------------------*/
+#konten1{
+  width:1349px; 
+  height:90px; 
+  background-color:yellow;
+  margin:auto;
+  float: bottom;
+  background: white;
+  background: -moz-linear-gradient(top, lightgray 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, lightgray), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, lightgray 0%, white 100%);
+  background: -o-linear-gradient(top, lightgray 0%, white 100%);
+  background: -ms-linear-gradient(top, lightgray 0%, white 100%);
+  background: linear-gradient(to bottom, lightgray 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='lightgray', EndColorStr='white', GradientType=0);
+}
+#konten1 .judul h1{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 220px;
+  text-align: left;
+  font-family: Cooper Black;
+  font-size: 36px;
+  color:lightgreen;
+}
+#isi1{
+  width:250px; 
+  height:990px; 
+  background-color:#cff09e;
+  margin:auto;
+  float: left;
+  margin-bottom: 50px;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 7px 7px 20px;
+}
+#isi2{
+  width:900px; 
+  height:300px; 
+  background-color:white;
+  margin:auto;
+  float: center;
+  margin-bottom: 10px;
+}
+#isi2 .judul h1{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 36px;
+  color:yellow;
+}
+#isi2 img{
+  padding-top: 40px ;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 20px;
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+#isi2 .hasil p{
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  font-family: Tahoma;
+  line-height: 15%;
+  text-indent: 70px;
+}
+#isi2 .hasil{
+  background-color: white;
+  width: 400px;
+  float: right;
+  padding-left: 0px;
+  padding-right: 70px;
+  margin: auto;
+  text-align: right;
+  font-size: 15px;
+  font-family: Tahoma;
+}
+/* ----------------------------KONTEN2------------------------*/
+#konten2{
+  width:1349px; 
+  height:1020px; 
+  background-color:white;
+  margin:auto;
+  margin-bottom: 0px;
+  border-radius: 0px 0px 8px 8px;
+  float: bottom;
+}
+/* ----------------------------KONTEN3------------------------*/
+#konten3{
+  width:1349px; 
+  height:105px; 
+  background-image: url('../images/j.png');
+  margin:auto;
+  margin-bottom: 0px;
+  border-radius: 0px 0px 8px 8px;
+  float: bottom;
+}
+/* ----------------------------KONTEN4------------------------*/
+#konten4{
+  width:1349px; 
+  height:700px; 
+  background-color:#f9f9f9;
+  margin:auto;
+  margin-bottom: 0px;
+  border-radius: 0px 0px 8px 8px;
+  float: bottom;
+}
+/* ----------------------------FOOTER------------------------*/
+#footer
+{
+  width:1349px; 
+  height:400px;  
+  margin: 0 auto;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  text-align: center;
+
+}
+#footer1
+{
+  text-align: left;
+  float:left;
+  width:600px; 
+  height:300px;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+}
+#footer1 .link1 img 
+{
+  text-align: left;
+  float:left;
+  width:54px; 
+  height:45px;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  padding-left: 20px;
+}
+#footer1 .link2
+{
+  background-color: darkgray;
+  float: left;
+  padding-top:0px ;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+#footer1 .link2 a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+#footer1 .link3
+{
+  background-color: darkgray;
+  float: left;
+  padding-top:10px ;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 5px;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+#footer1 .link3 a
+{
+  text-decoration: none;
+  color: whitesmoke;
+}
+#footer2
+{
+  float: right;
+  width:600px; 
+  height:300px;  
+  margin: 0 auto;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  
+}
+#footer2 .alamat p
+{
+  text-align: right;
+  margin-right: 30px;
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: tahoma;
+  color: whitesmoke;
+}
+#footer3
+{
+  float: left;
+  width:1349px; 
+  height:100px;  
+  margin: 0 auto;
+  background: darkgray;
+  border-top: 2px solid darkgray;
+  text-align: center;
+}
+/* ----------------------------GARIS FOOTER------------------------*/
+hr.onepixel {
+    border-top: 2px dashed #afbcc6;
+    border-bottom: 2px dashed #eff2f6;
+    width: 900px;
+    margin-bottom: 10px;
+    margin-left: 220px;
+}
+/* ----------------------------RESPONSIVE------------------------*/
+
+/* ----------------------------CALENDAR------------------------*/
+
+#sidebar{
+ background-color:#f3f1e7;
+ margin-left:10px;
+ margin-right:10px;
+ margin-top:20px;
+ border-radius:5px;
+ border-color:#C4E0AF;
+ border-style:solid;
+ border-width:thin; 
+}
+
+  #sidebar .body {
+  margin: 20px 15px 20px 15px;
+ }
+ 
+ #sidebar .judul {
+  margin:-13px auto 0;
+  width:98px;
+  height:35px;
+  background-color:#96b74b;
+  background-repeat:repeat-x;
+  border-radius:5px;
+ }
+
+  #sidebar .judul h4{
+  color:#ffffff;
+  text-shadow:0px 0px 5px #666666;
+  padding-left:10px;
+  padding-top:5px;
+ }
+ 
+ #sidebar li{
+  list-style-type:none;
+  display:block;
+  padding-top:8px;
+  padding-bottom:8px;
+  margin-left:-40px;
+  border-bottom:1px solid;
+  border-color:#C4E0AF;
+  
+ }
+
+  #sidebar li a{
+  color:#2e776a;
+  text-decoration:none;
+  padding-left:5px;
+ }
+
+  #sidebar li:hover{
+  color:#ffffff;
+  background-color:#b2df8e;
+  padding-left:-80px;
+ }
+
+

@@ -1,0 +1,14 @@
+				WEBSITE FUNNY ZOO BOGOR				|
+===============================================================================	|	
+	FRONT END ==>> CI_Funny_Zoo						|		
+	URL ==>> localhost/CI_Funny_Zoo						|
+===============================================================================	|
+	BACK END ==>> funny_zoo							|
+	URL ==>> localhost/index3_login.php					|
+===============================================================================	|
+	DATABASE ==>> dbs_funnyzoo.sql						|
+===============================================================================	|
+	NOTE : Sebelumnya IMPORT terlebih dahulu databasenya			|
+		dengan nama dbs_funnyzoo					|
+===============================================================================	|								
+	!!!!!!!!! OK SIIIP SUKSES SELALU YAAAH SEMANGAAAAT !!!!!!		|
